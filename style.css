@@ -1,21 +1,20 @@
+/* . is for class */
 body {
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
-
-/* . is for class */
 .container {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #00989d;
+    background-color: #857484;
 }
 
-.upper {
-position: relative;
-display: flex;
-height: 50%;
-background-color: #00989d;
+.upper{
+    position: relative;
+    display: flex;
+    height: 50%;
+    background-color: #886f87;
 }
 
 .upper div {
@@ -23,10 +22,106 @@ background-color: #00989d;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 30px;
-    border: white 0.3 solid;
-    font-weight: bold;
-    text-transform: uppercase;
+    /* color: rgb(255, 0, 0);     */
+    border: rgb(62, 105, 58) 0.3rem solid;    
 }
 
+.circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.circle1 {
+    background-color: #2a5739;
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.circle2 {
+    background-color: rgb(54, 189, 65);
+    top: 30px;
+    left: 160px;
+    z-index: 1;
+}
+
+.circle3 {
+    background-color: rgb(63, 161, 104);
+    width: 30px;
+    height: 30px;
+    top: 40px;
+    left: 360px;
+    z-index: 1;
+}
+
+.circle4 {
+    background-color: #4ca137;
+    width: 30px;
+    height: 30px;
+    top: 120px;
+    left: 20px;
+    z-index: 1;
+}
+
+.circle5 {
+    background-color: rgb(23, 143, 7);
+    width: 30px;
+    height: 30px;
+    top: 190px;
+    right: 70px;
+    z-index: 1;
+}
+
+.circle6 {
+    background-color: #25eb1e;
+    top: 90px;
+    right: 240px;
+    z-index: 1;
+}
+
+#figure1 {
+    position: absolute;
+    z-index: 1;
+    left: 300px;
+    bottom: 0px;
+    width: 150px;
+}
+
+#figure2 {
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
+    z-index: 1;
+}
+
+.triangle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0 0 0 250px;
+    height: 0;
+    z-index: 1;
+}
+
+.triangleSmall {
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid #574040;
+    border-left: 100px solid transparent;
+    border-right:100px solid transparent;
+    z-index: 2;
+}
+
+.triangleBig {
+    width: 0;
+    height: 0;
+    border-bottom:350px dashed #3f2c2c;
+    border-left: 150px solid transparent;
+    border-right:150px solid transparent;
+    right: calc(45% - 250px);
+}
